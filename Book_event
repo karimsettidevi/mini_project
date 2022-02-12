@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang = "en" dir = "ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Booking form</title>
+    <link rel = "stylesheet" href = "Book_event.css"
+    <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+  </head>
+  
+  <body>
+    <div class="container">
+      <div class = "title"> Book Event with <span style="color:blueviolet" style="font: bold;">TETRAD</span></div>
+      <form name="Booking_form" required method="POST" action="Book_event.php">
+        <div class="user-details">
+
+          <div class="input-box">
+            <span class="details">Name:</span>
+            <input type="text" name="name" placeholder="Enter Name" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Email:</span>
+            <input type="email" name="email" placeholder="Enter your registered mail" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Contact number:</span>
+            <input type="mobile" name="mobile" placeholder="Enter mobile number" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Event Type:</span>
+            <select name="Event_type">
+              <option value="Birthday">Birthday</option>
+              <option value="Marriage">Marriage</option>
+              <option value="Haldi">Haldi</option>
+              <option value="Candle_light">Candle light Dinner</option>
+              <option value="Bride_to_be">Bride to be</option>
+              <option value="Mom_to_be">Mom to be</option>
+              <option value="Family_gathering">Family gathering</option>
+              <option value="Farewell">Farewell or Get-together</option>
+              </select>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Place:</span>
+            <select name="city">
+              <option value="Bhimavaram">Bhimavaram</option>
+              <option value="Rajahmundy">Rajahmundy</option>
+              <option value="Vijayawada">Vijayawada</option>
+              <option value="Visakapatanam">Visakapatanam</option>
+              <option value="Palakol">Palakol</option>
+              <option value="Eluru">Eluru</option></select>
+          </div>
+        
+        <div class="input-box">
+          <span class="details">Date:</span>
+          <input type="date" name="date" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Address:</span>
+          <input type="text" name="address" required>
+        </div>
+          
+          <div class="input-box">
+            <span class="details">Time:</span>
+            <input type="time" name="time" required>
+          </div>
+
+          <div class="service"> 
+            <br><span class="details">Services: </span><br/>
+            <br><div class="check">
+            <input type="checkbox" value="Food" name="service[]">
+            <label>Food</label>
+            <input type="checkbox" value="Photography" name="service[]">
+            <label>Photography</label>
+            <input type="checkbox" value="Decoration" name="service[]">
+            <label>Decor</label>
+            <input type="checkbox" value="concert" name="service[]">
+            <label>Concert</label></div>
+          </div>
+
+        </div>
+          <div class="button">
+          <br><input type="submit" value= "Book"><br/></div>
+      </form>
+    </div>
+  </body>
